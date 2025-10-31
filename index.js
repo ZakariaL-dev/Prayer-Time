@@ -53,8 +53,8 @@ function prayerExcute(){
         hijriDisplay.innerHTML = hijri;
 
         // position
-        latitudeDisplay.innerHTML = position.latitude;
-        longitudeDisplay.innerHTML = position.longitude;
+        latitudeDisplay.innerHTML = position.latitude.toFixed(2);
+        longitudeDisplay.innerHTML = position.longitude.toFixed(2);
                 
         //salawat
         FajrDisplay.innerHTML = timings.Fajr;
