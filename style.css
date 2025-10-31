@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 254, 213);
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+header i{
+    font-size: 3.5rem;
+    color: darkolivegreen;
+}
+header h1{
+    color: darkgreen;
+    font-size: 2.5rem;
+}
+header p{
+    color: forestgreen;
+    font-size: 1.2rem;
+}
+
+.dates{
+    background-color: rgb(118, 176, 118);
+    padding: 20px 40px;
+    width: 90vw;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px rgba(11, 84, 22, 0.562);
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.date{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.place{
+    width: 26%;
+}
+.place select{
+    width: 100%;
+    padding: 11px 20px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: rgb(84, 171, 84);
+    border: 2px solid greenyellow;
+    color: azure;
+}
+.place select:focus{
+    outline: none;
+    border: 2px solid greenyellow;
+}
+.location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.location span{
+    font-weight: bold;
+}
+
+.prayertime{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.prayertime div{
+    background-color: rgb(146, 186, 138);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px rgba(11, 84, 22, 0.562);
+    color: azure;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+.prayertime div:hover{
+    transform: translateY(-5px);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: darkolivegreen;
+}
+
+@media (max-width: 1020px){ 
+    .date, .place{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer times</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-kaaba"></i>
+        <h1>
+            Prayer Times
+        </h1>
+        <p>Find prayer times for your city</p>
+    </header>
+
+    <div class="dates">
+        <div class="date">
+            <h1 style="margin-bottom: 10px;">Today's Date</h1>
+            <p id="miladi">Tuesday, September 9, 2025</p>
+            <p id="hijri">9 Ramadan 1447 AH</p>
+        </div>
+        <div class="place">
+            <h4 style="margin-bottom: 8px;text-decoration: underline;">Select City: </h4>
+            <select id="cities">
+                <option>Algiers</option>
+                <option>Egypt</option>
+                <option>Dubai</option>
+                <option>Paris</option>
+                <option>Brussels</option>
+                <option>London</option>
+                <option>Canada</option>
+                <option>Makkah</option>
+                <option>Karachi</option>
+                <option>Tehran</option>
+                <option>Jafari</option>
+                <option>Gulf</option>
+                <option>Qatar</option>
+                <option>Singapore</option>
+                <option>Turkey</option>
+                <option>Tunisia</option>
+                <option>Morocco</option>
+                <option>Portugal</option>
+                <option>Jordan</option>
+                <option>Italy</option>
+                <option>Toulouse</option>
+                <option>Liège</option>
+                <option>Berlin</option>
+            </select>
+            <div class="location">
+                <p>Latitude: <span id="lat">00000</span></p>
+                <p>Longitude: <span id="long">00000</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="prayertime">
+        <div>
+            <img src="./prayers/fajr.png" alt="Fajr" width="80px">
+            <h3>Fajr</h3>
+            <p id="Fajr">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/sunrise.png" alt="Sunrise" width="80px">
+            <h3>Sunrise</h3>
+            <p id="Sunrise">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/sun.png" alt="Dhuhr" width="80px">
+            <h3>Dhuhr</h3>
+            <p id="Dhuhr">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/asr.png" alt="Asr" width="80px">
+            <h3>Asr</h3>
+            <p id="Asr">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/sunset.png" alt="Sunset" width="80px">
+            <h3>Sunset</h3>
+            <p id="Sunset">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/Maghrib.png" alt="Maghrib" width="80px">
+            <h3>Maghrib</h3>
+            <p id="Maghrib">--:--</p>
+        </div>
+        <div>
+            <img src="./prayers/isha.png" alt="Isha" width="80px">
+            <h3>Isha</h3>
+            <p id="Isha">--:--</p>
+        </div>
+    </div>
+
+<!-- next prayer calculator -->
+
+    <footer>
+            <p>Prayer times are calculated based on your selected city.</p>
+            <p>&copy; Prayer Times. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+<script src="./index.js"></script>
+</html>
